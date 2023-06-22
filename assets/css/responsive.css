@@ -1,0 +1,38 @@
+@media(max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer .attribution {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .main {
+        text-align: center;
+        padding: 10px;
+    }
+    .main .aside .titulo {
+        font-size: 2.5rem;
+    }
+    .main .aside p {
+        font-size: 1.3rem;
+    }
+    .footer .attribution,
+    .footer .attribution a {
+        font-size: 1.3rem;
+    }
+    .footer .attribution span {
+        display: block;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer .attribution,
+    .footer .attribution a {
+        font-size: 1.2rem;
+    }
+}

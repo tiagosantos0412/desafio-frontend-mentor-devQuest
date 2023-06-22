@@ -1,0 +1,109 @@
+/*Importando as fonets ao projeto*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+/*Variáveis globais*/
+
+:root{
+    /*Fontes*/
+    --fonte-titulos: 'Poppins', sans-serif;
+    --fonte-padrao:  'Open Sans', sans-serif;
+
+    /*Cores*/
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --cor-texto-padrao: #ffffff;
+}
+
+body {
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: var(--violet);
+    height: 100dvh;
+}
+/*Configurando o header*/
+.logo img {
+    padding: 30px 60px;
+}
+
+/*Configuração da sessão principal*/
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main .banner img {
+    padding: 10px 60px;
+}
+
+/*Configuração da sessão lateral*/
+.aside {
+    max-width: 450px;
+}
+
+.main .aside .titulo {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-texto-padrao);
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.main .aside p {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto-padrao);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.aside .register-button {
+    display: inline-block;
+    background-color: var(--cor-texto-padrao);
+    color: var(--violet);
+    font-family: var(--fonte-padrao);
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 140px;
+}
+
+.aside .register-button:hover {
+    opacity: 0.5;
+}
+
+/*configuração do footer*/
+.footer {
+    display: flex;
+    padding: 20px 60px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer .attribution {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto-padrao);
+    font-size: 1.5rem;
+}
+
+.footer .attribution a {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto-padrao);
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.footer .attribution a:hover {
+    font-weight: 600;
+}
+
+.footer .social {
+    font-size: 1.8rem;
+}
+
+.footer .social a{
+    margin: 10px;
+    color: var(--cor-texto-padrao);
+    transition: 0.3s;
+}
+
+.footer .social a:hover {
+    opacity: 0.5;
+}
